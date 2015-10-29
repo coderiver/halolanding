@@ -1,0 +1,41 @@
+@font-face
+	font-family: "svgfont"
+	src: url('fonts/svgfont.eot')
+	src: url('fonts/svgfont.eot?#iefix') format('eot'), url('fonts/svgfont.woff') format('woff'), url('fonts/svgfont.woff2') format('woff2'), url('fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-award-1: "\EA01"
+$icon-sepa: "\EA02"
+$icon-skrill: "\EA03"
+$icon-award-2: "\EA04"
+$icon-award-3: "\EA05"
+$icon-button: "\EA06"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-award-1:before
+	content: $icon-award-1
+.icon-sepa:before
+	content: $icon-sepa
+.icon-skrill:before
+	content: $icon-skrill
+.icon-award-2:before
+	content: $icon-award-2
+.icon-award-3:before
+	content: $icon-award-3
+.icon-button:before
+	content: $icon-button
