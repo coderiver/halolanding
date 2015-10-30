@@ -85,22 +85,22 @@
 	&.slick-disabled
 		opacity: 0.2
 	&:before
-		content: ""
 		position: absolute
 		top: 0
-		width: 20px
-		height: 90px 
-		background-color: #FFF 
+		color: #FFF 
+		font-size: 90px
 .slick-prev
 	left: 0
 	&:before
+		content: "\EA0A"
+		@extend %icon
 		left: 0
-		background: url("../img/arrow-left.svg") center center no-repeat
 .slick-next
 	right: 0
 	&:before
+		content: "\EA0B"
+		@extend %icon
 		right: 0
-		background: url("../img/arrow-right.svg") center center no-repeat
 .slick-dots
 	text-align: center
 	position: absolute
