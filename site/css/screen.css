@@ -82,23 +82,26 @@ a { text-decoration: none; }
 
 .logo { display: inline-block; vertical-align: top; margin-top: 20px; background-image: url("../img/icons.png"); width: 360px; height: 260px; background-position: 0px 0px; width: 180px; height: 130px; background-size: cover; }
 @media only screen and (max-width: 400px) { .logo { width: 120px; height: 87px; } }
-@media only screen and (max-width: 340px) { .logo { width: 90px; height: 65px; } }
+@media only screen and (max-width: 340px) { .logo { width: 90px; height: 65px; margin: 15px 0; } }
 
 .btn { display: inline-block; vertical-align: middle; width: 240px; height: 60px; background-color: #F9C721; box-shadow: 0px 5px 10px 1px #000; color: #000; font-size: 35px; line-height: 1.9; transition: -webkit-transform 300ms; transition: transform 300ms; z-index: 3; font-family: "ReformaGroteskMediumC", Arial, sans-serif; }
 .btn:hover { -webkit-transform: translateY(2px); -ms-transform: translateY(2px); transform: translateY(2px); }
+@media only screen and (max-width: 340px) { .btn { height: 40px; line-height: 1.35; } }
 
 h1 { color: #FFF; font-size: 58px; font-weight: normal; line-height: 0.9; font-family: "ReformaGroteskMediumC", Arial, sans-serif; }
 @media only screen and (max-width: 550px) { h1 { font-size: 48px; } }
 @media only screen and (max-width: 470px) { h1 { font-size: 40px; } }
-@media only screen and (max-width: 340px) { h1 { font-size: 36px; } }
+@media only screen and (max-width: 340px) { h1 { font-size: 32px; } }
 
 p { color: rgba(255, 255, 255, 0.5); font-size: 11px; font-weight: normal; }
 
-.slider { width: 96%; padding-bottom: 30px; margin: 0 auto 120px; }
+.slider { width: 96%; padding-bottom: 15px; margin: 0 auto 120px; }
+@media only screen and (max-width: 340px) { .slider { margin-bottom: 90px; } }
 
 .slide { padding: 0 30px; }
 .slide p { font-size: 16px; line-height: 1.4; font-family: "PFDinTextPro-Light", Arial, sans-serif; }
 .slide p a { text-decoration: underline; color: #F9C721; }
+@media only screen and (max-width: 340px) { .slide p { font-size: 14px; } }
 
 .awards { display: inline-block; vertical-align: top; margin: 40px 0; font-size: 0; }
 .awards .awards__item { display: inline-block; vertical-align: middle; margin: 0 15px; }
@@ -111,10 +114,12 @@ p { color: rgba(255, 255, 255, 0.5); font-size: 11px; font-weight: normal; }
   .awards .awards__item i { font-size: 75px; } }
 @media only screen and (max-width: 420px) { .awards .awards__item i { font-size: 70px; } }
 @media only screen and (max-width: 390px) { .awards .awards__item i { font-size: 60px; } }
-@media only screen and (max-width: 340px) { .awards .awards__item i { font-size: 55px; } }
+@media only screen and (max-width: 340px) { .awards { margin: 15px 0; }
+  .awards .awards__item i { font-size: 55px; } }
 
 .copyright { display: inline-block; vertical-align: top; margin: 20px 0 40px; font-size: 11px; color: rgba(255, 255, 255, 0.5); }
 @media only screen and (max-width: 550px) { .copyright { margin-bottom: 20px; } }
+@media only screen and (max-width: 340px) { .copyright { margin: 10px 0 15px; } }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -141,7 +146,7 @@ p { color: rgba(255, 255, 255, 0.5); font-size: 11px; font-weight: normal; }
 .slick-prev, .slick-next { position: absolute; top: 50%; margin-top: -45px; font: 0/0 a; text-shadow: none; color: transparent; height: 90px; background: none; }
 .slick-prev:focus, .slick-next:focus { outline: none; }
 .slick-prev.slick-disabled, .slick-next.slick-disabled { opacity: 0.2; }
-.slick-prev:before, .slick-next:before { position: absolute; top: 0; color: #FFF; font-size: 90px; }
+.slick-prev:before, .slick-next:before { position: absolute; top: 0; color: #FFF; font-size: 90px; z-index: 999; }
 
 .slick-prev { left: 0; }
 .slick-prev:before { content: ""; left: 0; }
